@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-circle" style="margin-left: -152px; margin-top: 8px;">KX</div>
+                </a>
+
+                <nav class="nav-desktop" style="margin-left: 1000px;">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+
+                <button class="mobile-menu-btn">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-mobile">
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i data-feather="arrow-left"></i>
+                Back to Home
+            </a>
+
+            <div class="contact-page">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">
+                    Have a project in mind or want to chat? Feel free to reach out and I'll get back to you as soon as possible.
+                </p>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                                <i data-feather="send"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info" style="box-shadow: 1px 1px 10px 2px #6aa888;">
+                        <h2 class="section-title-page">Contact Information</h2><br>
+                        <div class="contact-details" style="margin-top: -18px;">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-feather="mail"></i>
+                                </div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>karunaselvaraj09@gmail.com</p><br>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-feather="phone"></i><br>
+                                </div>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p>+91 - 9750779719</p><br>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-feather="map-pin"></i>
+                                </div>
+                                <div>
+                                    <h3>Location</h3>
+                                    <p>Tiruchirapalli, Tamil Nadu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Follow Me</h3><br>
+                            <div class="social-icons-contact" style="margin-top: -12px;">
+                                <a href="https://github.com" target="_blank" class="social-icon-contact">
+                                    <i data-feather="github"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="social-icon-contact">
+                                    <i data-feather="linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="social-icon-contact">
+                                    <i data-feather="twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Karunamoorthy</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Karunaselvaraj" target="_blank" class="social-icon">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/karunamoorthy-s-8a49b3257/" target="_blank" class="social-icon">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    © <span id="current-year"></span> Karunamoorthy. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        feather.replace();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

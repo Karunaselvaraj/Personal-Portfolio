@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-circle" style="margin-left: -152px; margin-top: 8px;">KX</div>
+                </a>
+                <nav class="nav-desktop" style="margin-left: 1000px;">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-mobile">
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i data-feather="arrow-left"></i>
+                Back to Home
+            </a>
+
+            <div class="projects-page">
+                <h1 class="page-title">My Projects</h1>
+                <p class="page-subtitle">
+                    Here's a collection of my recent work. Each project represents a unique challenge and solution.
+                </p>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="web-development">Web Development</button>
+                    <button class="filter-btn" data-category="ui-ux-design">Java</button>
+                    <button class="filter-btn" data-category="mobile-apps">IoT</button>
+                </div>
+
+                <div class="projects-grid-page">
+                    <div class="project-card-page" data-category="web-development" style="box-shadow: 1px 1px 10px 2px #6aa888;">
+                        <div class="project-image">
+                            <img src="https://cdn.pixabay.com/photo/2022/07/16/15/01/checklist-7325314_640.jpg" alt="E-commerce Website">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web Development</span>
+                            <h3 class="project-title">Basic To-Do Task Manager</h3>
+                            <p class="project-description" style="text-align: justify;">
+                                A Basic To-Do Task Manager is a simple app to create, update, and organize daily tasks efficiently.
+                            </p>
+                            <a href="https://github.com/Karunaselvaraj/Basic-To-Do-Task" class="project-link">
+                                View Details
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-page" data-category="ui-ux-design" style="box-shadow: 1px 1px 10px 2px #6aa888;">
+                        <div class="project-image">
+                            <img src="https://cdn.pixabay.com/photo/2023/01/22/23/16/tic-tac-toe-7737546_1280.jpg" alt="Portfolio Redesign">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Java</span>
+                            <h3 class="project-title">Tic - Tac - Toe</h3>
+                            <p class="project-description" style="text-align: justify;">
+                                Tic-Tac-Toe is a simple strategy game where two players compete to align three symbols in a row on a 3x3 grid.
+                            </p>
+                            <a href="https://github.com/Karunaselvaraj/Tic-Tac-Toe" class="project-link">
+                                View Details
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-page" data-category="mobile-apps" style="box-shadow: 1px 1px 10px 2px #6aa888;">
+                        <div class="project-image">
+                            <img src="https://cdn.pixabay.com/photo/2023/06/10/13/06/camera-8053996_640.jpg" alt="Mobile Banking App">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">IoT</span>
+                            <h3 class="project-title" style="font-size:large;">Attention Span Monitoring System</h3>
+                            <p class="project-description" style="text-align: justify;">
+                                Student Attention Span Monitoring System tracks and analyzes student focus during learning sessions.
+                            </p>
+                            <a href="#" class="project-link">
+                                View Details
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-page" data-category="web-development" style="box-shadow: 1px 1px 10px 2px #6aa888;">
+                        <div class="project-image">
+                            <img src="https://cdn.pixabay.com/photo/2013/05/30/09/16/pay-114649_640.jpg" alt="Restaurant Website">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web Development</span>
+                            <h3 class="project-title">The-Lucky-Guess</h3>
+                            <p class="project-description" style="text-align: justify;">
+                                The Lucky Guess is a fun app to test your luck with random predictions and challenges.
+                            </p>
+                            <a href="https://github.com/Karunaselvaraj/The-Lucky-Guess" class="project-link">
+                                View Details
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-page" data-category="web-development" style="box-shadow: 1px 1px 10px 2px #6aa888;">
+                        <div class="project-image">
+                            <img src="https://cdn.pixabay.com/photo/2019/06/30/07/41/mockup-4307500_640.jpg" alt="Travel Blog">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web Development</span>
+                            <h3 class="project-title">Web - Site Clone</h3>
+                            <p class="project-description" style="text-align: justify;">
+                                Developed a replica of an existing website using modern frontend technologies like HTML, CSS, and JavaScript.                            
+                            <a href="#" class="project-link" style="margin-top: 18px;">
+                                View Details
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-page" data-category="web-development" style="box-shadow: 1px 1px 18px 3px #6aa888;">
+                        <div class="project-image">
+                            <img src="https://cdn.pixabay.com/photo/2021/04/13/07/00/web-design-6174834_640.jpg" alt="Fitness Tracker App">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web Development</span>
+                            <h3 class="project-title">Digital Clock</h3>
+                            <p class="project-description" style="text-align: justify;">
+                                A simple and dynamic digital clock built using JavaScript to display real-time hours, minutes, and seconds.</p>
+                            <a href="https://github.com/Karunaselvaraj/Digital-Clock" class="project-link">
+                                View Details
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Karunamoorthy</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Karunaselvaraj" target="_blank" class="social-icon">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/karunamoorthy-s-8a49b3257/" target="_blank" class="social-icon">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    © <span id="current-year"></span> Karunamoorthy. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        feather.replace();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
